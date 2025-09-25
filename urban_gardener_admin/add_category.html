@@ -1,0 +1,62 @@
+<!-- add_category.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Category</title>
+  <style>
+    body {
+      background-color: #f1f8e9;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      background: #c5e1a5;
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      margin-bottom: 40px;
+    }
+    input[type=text], button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    table {
+      width: 100%;
+      background: #e0f2f1;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #9ccc65;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="gardener_details.html">Gardener</a>
+    </nav>
+  <h2>Add Category</h2>
+  <form action="add_category.php" method="POST">
+    <input type="text" name="category_name" placeholder="Category Name" required>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>View Categories</h2>
+  <table>
+    <tr>
+      <th>Category Name</th>
+      <th>Date</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>Indoor Plants</td>
+      <td>2025-05-01</td>
+      <td>Edit | Delete</td>
+    </tr>
+  </table>
+</body>
+</html>

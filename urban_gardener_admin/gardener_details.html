@@ -1,0 +1,54 @@
+<!-- gardener_details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Urban Gardener Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4c3;
+      padding: 30px;
+    }
+    form {
+      background: #aed581;
+      padding: 20px;
+      border-radius: 10px;
+      width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="view_orders.html">View Orders</a>
+    </nav>
+  <h2 style="text-align:center">Urban Gardener Details</h2>
+  <form action="submit_gardener.php" method="POST">
+    <input type="text" name="gardener_name" placeholder="Urban Gardener Name" required>
+    <input type="email" name="gardener_email" placeholder="Urban Gardener Email" required>
+    <input type="password" name="gardener_password" placeholder="Urban Gardener Password" required>
+    <input type="text" name="gardener_contact" placeholder="Contact Number" required>
+    <input type="text" name="gardener_address" placeholder="Address" required>
+    <input type="text" name="gardener_specialist" placeholder="Specialist in..." required>
+    <textarea name="problem_reason" placeholder="What problem do customers usually contact for?" rows="4" required></textarea>
+    <textarea name="message" placeholder="Message..." rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

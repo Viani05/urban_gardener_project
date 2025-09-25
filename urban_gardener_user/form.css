@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4fff0;
+    color: #2e3d2c;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #d8e9d0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #355e3b;
+}
+
+/* Header / Navbar */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8d5ba;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e3d2c;
+}
+
+.logo span {
+    color: #558b6e;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #2e3d2c;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    filter: brightness(85%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+    font-size: 32px;
+    font-weight: bold;
+}
